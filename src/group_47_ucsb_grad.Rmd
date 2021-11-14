@@ -5,7 +5,8 @@ date: "11/13/2021"
 output: html_document
 ---
 
-## Set Up
+
+
 
 ```{r setup, include=FALSE, warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -15,13 +16,14 @@ library(here)
 
 ## Read in the data
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 ucsb_grad <- read_csv(here("data", "ucsb_grad_data.csv"))
 ```
 
 ## Data Visualization
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
+
 ggplot(data = ucsb_grad, aes(year_abbr, y = domestic_enrollment, fill = ethnicity)) + 
   geom_col(position = "fill") +
   labs(x = "Year",
@@ -32,3 +34,7 @@ ggplot(data = ucsb_grad, aes(year_abbr, y = domestic_enrollment, fill = ethnicit
 ```
 
 
+
+#### Citation
+
+“UCSB Office of Budget and Planning Campus Profiles.” Office of Budget & Planning, bap.ucsb.edu/institutional-research/campus-profiles. 
