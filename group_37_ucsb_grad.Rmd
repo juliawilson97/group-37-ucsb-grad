@@ -1,0 +1,21 @@
+---
+title: "Group 37 UCSB Domestic Grad Enrollment"
+author: "Narjes Mathlouthi & Julia Wilson"
+date: "11/13/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+```
+
+
+# Read in the data
+```{r}
+ucsb_grad <- read_csv(here("data", "ucsb_grad_data.csv"))
+```
+
+
+
